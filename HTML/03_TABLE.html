@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블</title>
+</head>
+<body>
+
+    <h1>테이블</h1>
+
+    <!--
+        table
+        tr, td
+        colspan, rowspan
+        th
+        thead
+        tbody
+        tfoot
+    -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>성적</th>
+            </tr>
+        </thead>
+
+       <tbody>
+        <tr>
+            <td>1</td>
+            <td>홍길동</td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>이순신</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>유관순</td>
+            <td>95</td>
+        </tr>
+       </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">평균</td>
+                <td>95</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br><br><br>
+    <hr>
+    <br><br><br>
+
+    <!--
+        실습 : 테이블 만들기
+    -->
+
+    <table border="1">
+        <tr>
+            <td rowspan="7">비고</td>
+            <td>번호</td>
+            <td colspan="2">제목</td>
+            <td>작성자</td>
+            <td>작성일</td>
+            <td>조회수</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>안녕</td>
+            <td>글보기</td>
+            <td>ㅁ</td>
+            <td>20</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>하세요</td>
+            <td>글보기</td>
+            <td>ㄴ</td>
+            <td>22</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>오늘은</td>
+            <td>글보기</td>
+            <td>ㅇ</td>
+            <td>06</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>집에</td>
+            <td>글보기</td>
+            <td>ㄹ</td>
+            <td>07</td>
+            <td>40</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>가고싶네요</td>
+            <td>글보기</td>
+            <td>ㅎ</td>
+            <td>220607</td>
+            <td>50</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">전체 공지사항 개수</td>
+            <td colspan="2">5개</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th colspan="6">한국의 차</th>
+        </tr>
+        <tr>
+            <th rowspan="6">뿌리차</th>
+            <td>인삼차</td>
+            <th rowspan="9">과일차</th>
+            <td>수정과</td>
+            <th rowspan="5">잎차</th>
+            <td>뽕잎차</td>
+        </tr>
+        <tr>
+            <td>당귀차</td>
+            <td>유자차</td>
+            <td>감잎차</td>
+        </tr>
+        <tr>
+            <td>생강차</td>
+            <td>구기자차</td>
+            <td>솔잎차</td>
+        </tr>
+        <tr>
+            <td>칡차</td>
+            <td>대추차</td>
+            <td>국화차</td>
+        </tr>
+        <tr>
+            <td>둥굴레차</td>
+            <td>오미자차</td>
+            <td>이슬차</td>
+        </tr>
+        <tr>
+            <td>마차</td>
+            <td>매실차</td>
+            <th rowspan="4">기타</th>
+            <td>두충차</td>
+        </tr>
+        <tr>
+            <th rowspan="3">곡물차</th>
+            <td>보리차</td>
+            <td>모과차</td>
+            <td>영지버섯차</td>
+
+        </tr>
+        <tr>
+            <td>옥수수차</td>
+            <td>산수유차</td>
+            <td>귤강차</td>
+        </tr>
+        <tr>
+            <td>현미차</td>
+            <td>탕자차</td>
+            <td>쌍화차</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

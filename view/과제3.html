@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>과제3</title>
+    <style>
+        .out{
+            width: 1000px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .o1{
+            height: 150px;
+        }
+
+        .o2{
+            height: 50px;
+            z-index: 10;
+        }
+
+        .o3{
+            height: 400px;
+        }
+
+        .o4{
+            height: 50px;
+        }
+
+        .o5{
+            height: 150px;
+        }
+
+        .in{
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: absolute;
+        }
+
+        #i1-1{
+            width: 200px;
+        }
+
+        #i1-2{
+            width: 650px;
+            left: 200px;
+        }
+
+        #i1-3{
+            width: 150px;
+            left: 850px;
+        }
+
+        #i2-1{
+            width: 1000px;
+        }
+
+        #i3-1{
+            width: 150px;
+        }
+
+        #i3-2{
+            width: 650px;
+            left: 150px;
+        }
+
+        #i3-3{
+            width: 200px;
+            left: 800px;
+        }
+
+        #i4-1{
+            width: 1000px;
+        }
+
+        #i5-1{
+            width: 1000px;
+        }
+
+        #tb{
+            width: 60%;
+        }
+
+        #button{
+            width: 20%;
+        }
+
+        .sform{
+            margin-left: 15%;
+            margin-top: 9%;
+        }
+
+        ul>li{
+            float: left;
+            width: 150px;
+            height: 100%;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .menu{
+            list-style: none;
+            margin: 0px;
+            margin-top: 3px;
+            padding: 3px;
+        }
+
+        .main{
+            color: orange;
+        }
+
+        .main:hover{
+            color: blue;
+        }
+
+        .sub{
+            color: orange;
+            margin: 0px;
+            padding: 3px;
+            width: 100%;
+        }
+
+        .menu>.main{
+            text-decoration: none;
+        }
+
+        .menu>.main+ul{
+            display: none;
+        }
+        .menu>.main:hover+ul{
+            display: block;
+        }
+        .menu>.main+ul:hover{
+            display: block;
+        }
+
+        li>ul{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            padding-top: 15px;
+        }
+
+        .hrink{
+            text-decoration: none;
+            text-align: center;
+            font-size: smaller;
+        }
+
+        .tin{
+            width: 80%;
+            height: 20px;
+        }
+
+        .logb-div{
+            width: 60px;
+            height: 50px;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            top: -9px;
+            left: 68px;
+        }
+
+        #sign{
+            width: 199px;
+            border: 1px solid black;
+            position: absolute;
+            top: 53px;
+            box-sizing: border-box;
+        }
+
+        #sign-in{
+            width: 40%;
+            margin: 0px;
+            padding-right: 8px;
+        }
+
+        #ips{
+            width: 60%;
+            margin: 0px;
+            padding-left: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="out o1">
+        <div class="in o1" id="i1-1"></div>
+        <div class="in o1" id="i1-2">
+            <form action="search" method="get" class="search sform">
+                <input class="search" type="text" id="tb">
+                <input class="search" type="submit" value="검색" id="button">
+            </form>
+        </div>
+        <div class="in o1" id="i1-3"></div>
+    </div>
+    <div class="out o2">
+        <div class="in o2" id="i2-1">
+            <ul class="menu">
+                <li class="menu">
+                    <a href="" class="main menu">JAVA</a>
+                    <ul>
+                        <li class="sub menu">1</li>
+                        <li class="sub menu">2</li>
+                        <li class="sub menu">3</li>
+                        <li class="sub menu">4</li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="" class="main menu">SQL</a>
+                    <ul>
+                        <li class="sub menu">1</li>
+                        <li class="sub menu">2</li>
+                        <li class="sub menu">3</li>
+                        <li class="sub menu">4</li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="" class="main menu">FrontEnd</a>
+                    <ul>
+                        <li class="sub menu">1</li>
+                        <li class="sub menu">2</li>
+                        <li class="sub menu">3</li>
+                        <li class="sub menu">4</li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="" class="main menu">BackEnd</a>
+                    <ul>
+                        <li class="sub menu">1</li>
+                        <li class="sub menu">2</li>
+                        <li class="sub menu">3</li>
+                        <li class="sub menu">4</li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="" class="main menu">FramWork</a>
+                    <ul>
+                        <li class="sub menu">1</li>
+                        <li class="sub menu">2</li>
+                        <li class="sub menu">3</li>
+                        <li class="sub menu">4</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="out o3">
+        <div class="in o3" id="i3-1"></div>
+        <div class="in o3" id="i3-2"></div>
+        <div class="in o3" id="i3-3">
+            <div class="mem tin">
+                <input class="tin" type="text" id="id" placeholder="아이디">
+                <input class="tin" type="password" id="pwd" placeholder="비밀번호">
+            </div>
+            <div class="mem logb-div">
+                <input class="logb-div" type="button" value="로그인" id="logb">
+            </div>
+            <div class="mem sign" id="sign-in">
+            </div>
+            <div class="mem hrink" id="sign">
+                <a href="" class="hrink" id="sign-in">회원가입</a>
+                <a href="" class="hrink" id="ips">ID/PWD 찾기</a>
+            </div>
+        </div>
+    </div>
+    <div class="out o4">
+        <div class="in o4" id="i4-1"></div>
+    </div>
+    <div class="out o5">
+        <div class="in o5" id="i5-1"></div>
+    </div>
+    
+</body>
+</html>

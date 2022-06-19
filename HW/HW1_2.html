@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>젤다의 전설</title>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+        div{
+            border: 1px solid black;
+            /* 검은색으로 바꾸기 */
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Song Myung', serif;
+        }
+        #wrap{
+            width: 98vw;
+            height: 98vh;
+        }
+        #wrap>div{
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        #media>div{
+            height: 50%;
+            width: 100%;
+        }
+        #video{
+            height: 100%;
+            width: 100%;
+        }
+        
+        #title{
+            height: 15%;
+            border-bottom: 10px double white;
+            position: relative;
+        }
+        #title>h1{
+            height: 50%;
+            width: 50%;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+        }
+
+        #discript{
+            height: 85%;
+            padding: 10%;
+            font-size: 20px;
+            line-height: 180%;
+        }
+
+        #media{
+            position: relative;
+        }
+        #ss>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="text">
+            <div id="title">
+                <h1>젤다의 전설</h1>
+            </div>
+            <div id="discript">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat fugiat aperiam expedita nisi unde dolor ex temporibus qui omnis, ipsa tenetur illo et sequi incidunt laboriosam, soluta consequuntur vel?
+                <ul>
+                    <li><a href="">브레스 오브 더 와일드 홈페이지</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="media">
+            <div id="video">
+                <iframe ifame width="100%" height="100%" src="https://www.youtube.com/embed/hbI1BPgXTQI" frameborder="0"></iframe>
+            </div>
+            <div id="ss">
+                <img src="https://www.nintendo.co.kr/images/renew/software/switch/aaaaa/img_switch_aaaaa_large_thumb03.jpg" alt="야숨 스샷">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

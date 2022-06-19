@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+        div{
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        ul>li{
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Song Myung', serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transform: scale(1);
+        }
+
+        #wrap{
+            width: 98vw;
+            height: 98vh;
+        }
+
+        #header{
+            width: 100%;
+            height: 15%;
+            border-bottom: 10px double white;
+        }
+
+        #content{
+            width: 100%;
+            height: 85%;
+        }
+
+        #header>div{
+            height: 100%; 
+            float: left;
+        }
+        #header_1{ 
+            width: 80%;
+            position: relative;
+        }
+        #title{
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            line-height: 5px;
+            top: 25%;
+            left: 5%;
+        }
+        #title>h1{
+            text-align: center;
+            font-size: 45px;
+        }
+        #header_2{
+            width: 20%;
+            position: relative;
+        }
+        #header_2>#link{
+            width: 80%;
+            height: 30%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            text-align: center;
+            line-height: 45px;
+        }
+        #header_2 a:hover{
+            color: skyblue;
+        }
+
+        #content>div{
+            float: left;
+        }
+        #image_div{
+            background-color: rgba(0, 0, 0, 0.85);
+            height: 100%;
+            width: 70%;
+        }
+        #content>#image_div:hover+#list_div>ul{
+            /* display: block; */
+            opacity: 100%;
+            /* transition: 1.5s; */
+        }
+        #content>#list_div>ul:hover{
+            /* display: block; */
+            opacity: 100%;
+        }
+        #content>#list_div>ul{
+            transition: 1.5s;
+        }
+        #content>#list_div>ul{
+            /* display: none; */
+            opacity: 0%;
+        }
+        #image_div>img{
+            margin-top: 25%;
+            margin-left: 3%;
+            opacity: 90%;
+            transition: 1.5s;
+        }
+        #image_div:hover{
+            /* transition: 1.5s; */
+            background-color: rgba(10, 0, 0, 0.9);
+        }
+        #image_div:hover>img{
+            /* transition: 1.5s; */
+            transform: skew(-2deg, -5deg);
+            opacity: 40%;
+        }
+        #list_div{
+            height: 100%;
+            width: 30%;
+        }
+        #list_div>ul{
+            height: 20%;
+            width: 100%;
+            list-style: none;
+            margin-top: 25%;
+            padding: 0px;
+        }
+        #list_div>ul li{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 65px;
+        }
+        #list_div>ul li>a:hover{
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="header">
+            <div id="header_1">
+                <div id="title">
+                    <h1>스위치의 소리를 찾아서...</h1>
+                </div>   
+            </div>
+            <div id="header_2">
+                <div id="link">
+                    <a id="ninkor" href="https://www.nintendo.co.kr/">닌텐도코리아 바로가기</a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="image_div">
+                <img src="https://www.nintendo.co.kr/hardware/detail/switch-oled/img/07-local-lineup/pic_overview_blueRed.jpg" alt="스위치 사진">
+            </div>
+            <div id="list_div">
+                <ul>
+                    <li id="list_1"><a href="HW1_3.html" id="pokemon">포켓몬스터</a></li>
+                    <li id="list_2"><a href="HW1_2.html" id="zelda">젤다의 전설</a></li>
+                    <li id="list_3"><a href="HW1_4.html" id="acnh">동물의 숲</a></li>
+                    <li id="list_4"><a href="HW1_5.html" id="game_etc">그 외</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

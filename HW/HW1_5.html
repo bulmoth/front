@@ -6,13 +6,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
     <style>
         div{
-            border: 1px solid white;
+            border: 1px solid black;
+            /* 검은색으로 바꾸기 */
             box-sizing: border-box;
         }
         body{
             background-color: black;
             color: white;
             font-family: 'Song Myung', serif;
+        }
+        a, hr{
+            text-decoration: none;
+            color: white;
+        }
+        #discript>ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        #discript a:hover{
+            color: skyblue;
         }
         #wrap{
             width: 98vw;
@@ -22,6 +38,15 @@
             height: 100%;
             width: 50%;
             float: left;
+        }
+
+        #media>div{
+            height: 50%;
+            width: 100%;
+        }
+        #video{
+            height: 100%;
+            width: 100%;
         }
         
         #title{
@@ -34,7 +59,84 @@
             width: 50%;
             text-align: center;
             position: absolute;
-            top: 15%;
+            top: 20%;
+        }
+
+        #discript{
+            height: 85%;
+            padding: 10%;
+            font-size: 20px;
+            line-height: 180%;
+            position: relative;
+        }
+
+        #media{
+            position: relative;
+        }
+        #ss>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        #discript2>ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        #discript2 a:hover{
+            color: skyblue;
+        }
+        #wrap2{
+            width: 98vw;
+            height: 98vh;
+        }
+        #wrap2>div{
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        #media2>div{
+            height: 50%;
+            width: 100%;
+        }
+        #video2{
+            height: 100%;
+            width: 100%;
+        }
+        
+        #title2{
+            height: 15%;
+            border-bottom: 10px double white;
+            position: relative;
+        }
+        #title2>h1{
+            height: 50%;
+            width: 50%;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+        }
+
+        #discript2{
+            height: 85%;
+            padding: 10%;
+            font-size: 20px;
+            line-height: 180%;
+            position: relative;
+        }
+
+        #media2{
+            position: relative;
+        }
+        #ss2>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -43,15 +145,46 @@
     <div id="wrap">
         <div id="text">
             <div id="title">
-                <h1>그 외</h1>
+                <h1>미토피아</h1>
             </div>
             <div id="discript">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat fugiat aperiam expedita nisi unde dolor ex temporibus qui omnis, ipsa tenetur illo et sequi incidunt laboriosam, soluta consequuntur vel?
+                《미토피아》는 닌텐도 기획제작본부가 개발하고 닌텐도가 배급한 롤플레잉 비디오 게임이다. 본래 닌텐도 3DS용으로 개발돼 2017년 12월 8일 일본서 처음 출시됐다.
+                2021년 5월 21일, 닌텐도 스위치용 리마스터판이 2021년 5월 21일 전세계로 동시출시됐다.                <ul>
+                    <li><a href="https://www.nintendo.co.kr/software/switch/aw8sa/">▶미토피아 홈페이지</a></li>
+                </ul>
             </div>
         </div>
         <div id="media">
-            <div id="video"></div>
-            <div id="ss"></div>
+            <div id="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/obLkYqs-bxE" frameborder="0"></iframe>
+            </div>
+            <div id="ss">
+                <img src="https://pbs.twimg.com/media/E2UKI78VUAUYoyL?format=jpg&name=large" alt="미토피아 스샷">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="wrap2">
+        <div id="text2">
+            <div id="title2">
+                <h1>파이어 엠블렘</h1>
+            </div>
+            <div id="discript2">
+                《파이어 엠블렘 풍화설월》은 닌텐도 스위치용으로 인텔리전트 시스템즈와 코에이 테크모가 개발하고 2019년 7월 26일 닌텐도가 전 세계에 배급한 전술 롤플레잉 게임이다. 파이어 엠블렘의 16번째 게임이며 2007년 첫 출시된 파이어 엠블렘 새벽의 여신 이후 가정용 게임기를 위한 최초의 게임이다.                
+                <ul>
+                    <li><a href="https://www.nintendo.co.kr/software/switch/anvya/pc/">▶풍화설월 홈페이지</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="media2">
+            <div id="video2">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IkS4JElULs4" frameborder="0"></iframe>
+            </div>
+            <div id="ss2">
+                <img src="https://pbs.twimg.com/media/ERI-f53UUAMkwD-?format=jpg&name=large" alt="파엠 스샷">
+            </div>
         </div>
     </div>
     

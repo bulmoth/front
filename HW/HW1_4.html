@@ -6,13 +6,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
     <style>
         div{
-            border: 1px solid white;
+            border: 1px solid black;
+            /* 검은색으로 바꾸기 */
             box-sizing: border-box;
         }
         body{
             background-color: black;
             color: white;
             font-family: 'Song Myung', serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #discript>ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        #discript a:hover{
+            color: skyblue;
         }
         #wrap{
             width: 98vw;
@@ -22,6 +38,15 @@
             height: 100%;
             width: 50%;
             float: left;
+        }
+
+        #media>div{
+            height: 50%;
+            width: 100%;
+        }
+        #video{
+            height: 100%;
+            width: 100%;
         }
         
         #title{
@@ -34,7 +59,24 @@
             width: 50%;
             text-align: center;
             position: absolute;
-            top: 15%;
+            top: 20%;
+        }
+
+        #discript{
+            height: 85%;
+            padding: 10%;
+            font-size: 20px;
+            line-height: 180%;
+            position: relative;
+        }
+
+        #media{
+            position: relative;
+        }
+        #ss>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -46,12 +88,19 @@
                 <h1>동물의 숲</h1>
             </div>
             <div id="discript">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat fugiat aperiam expedita nisi unde dolor ex temporibus qui omnis, ipsa tenetur illo et sequi incidunt laboriosam, soluta consequuntur vel?
+                《모여봐요 동물의 숲》은 닌텐도 EPD가 개발하고 닌텐도가 배급하는 닌텐도 스위치 전용 생활 시뮬레이션 게임이다. 또한 모여봐요 동물의 숲은 《동물의 숲》 시리즈 본편 5번째 작품으로, 애칭으로는 모동숲이라는 이름을 쓴다. 2020년 5월 19일에 정식 발매되었다. 이 게임은 너굴이 운영하는 무인도 이주 패키지에 가입해 사람이 없는 섬에 이주하는 것으로 시작된다. 현실 시간에 맞춰 게임이 진행되며, 물품을 수집 및 제작하고 야생동물을 포획하며 의인화된 동물 주민들과 함께 마을을 건설하는 비디오 게임이다.            
+                <ul>
+                    <li><a href="https://www.nintendo.co.kr/software/switch/acbaa/">▶모여봐요 동물의 숲 홈페이지</a></li>
+                </ul>
             </div>
         </div>
         <div id="media">
-            <div id="video"></div>
-            <div id="ss"></div>
+            <div id="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QZMaL6mp35Y" frameborder="0"></iframe>
+            </div>
+            <div id="ss">
+                <img src="https://pbs.twimg.com/media/EXzw225UMAAM8Pu?format=jpg&name=large" alt="동숲 스샷">
+            </div>
         </div>
     </div>
     

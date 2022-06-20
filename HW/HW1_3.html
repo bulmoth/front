@@ -5,14 +5,30 @@
     <title>포켓몬스터</title>
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
     <style>
-        div{
-            border: 1px solid white;
+         div{
+            border: 1px solid black;
+            /* 검은색으로 바꾸기 */
             box-sizing: border-box;
         }
         body{
             background-color: black;
             color: white;
             font-family: 'Song Myung', serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #discript>ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        #discript a:hover{
+            color: skyblue;
         }
         #wrap{
             width: 98vw;
@@ -22,6 +38,15 @@
             height: 100%;
             width: 50%;
             float: left;
+        }
+
+        #media>div{
+            height: 50%;
+            width: 100%;
+        }
+        #video{
+            height: 100%;
+            width: 100%;
         }
         
         #title{
@@ -34,7 +59,24 @@
             width: 50%;
             text-align: center;
             position: absolute;
-            top: 15%;
+            top: 20%;
+        }
+
+        #discript{
+            height: 85%;
+            padding: 10%;
+            font-size: 20px;
+            line-height: 180%;
+            position: relative;
+        }
+
+        #media{
+            position: relative;
+        }
+        #ss>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -46,12 +88,23 @@
                 <h1>포켓몬스터</h1>
             </div>
             <div id="discript">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat fugiat aperiam expedita nisi unde dolor ex temporibus qui omnis, ipsa tenetur illo et sequi incidunt laboriosam, soluta consequuntur vel?
+                《포켓몬스터 소드·실드》는 게임프리크가 제작하고, 포켓몬 컴퍼니 및 닌텐도가 배급한 롤플레잉 게임이다. 닌텐도 스위치 전용이다.
+                <br>
+                《포켓몬스터》 비디오 게임 시리즈의 8세대 작품이다. 포켓몬 컴퍼니가 발매한 두 번째 가정용 콘솔 출시작이다. 2017년 E3에서 최초공개되었으며, 2019년 11월 15일 출시되었다.                
+                <br>
+                본작에서는 81종의 새 포켓몬과 아울러 13종의 종래의 포켓몬의 리전 폼이 추가되었다. 더불어 포켓몬의 특정조건을 충족시켰을 시 그 크기를 커지게 할 수 있는 다이맥스, 거다이맥스는 다이맥스지만 일부 포켓몬에서는 그 모습마저 바꿔 버리는 거다이맥스, 자유시점 기능 및 협동 레이드 기능이 도입된 와일드에리어 등이 함께 추가되었다. 
+                <ul>
+                    <li><a href="https://pokemonkorea.co.kr/sword_shield">▶소드&실드 홈페이지</a></li>
+                </ul>
             </div>
         </div>
         <div id="media">
-            <div id="video"></div>
-            <div id="ss"></div>
+            <div id="video">
+                <iframe ifame width="100%" height="100%" src="https://www.youtube.com/embed/uBYORdr_TY8" frameborder="0"></iframe>
+            </div>
+            <div id="ss">
+                <img src="https://pbs.twimg.com/media/EOZStAFUUAAfglC?format=jpg&name=large" alt="소실 스샷">
+            </div>
         </div>
     </div>
     

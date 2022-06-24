@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>실습4</h1>
+
+    <h2>충전할 별풍선 개수 선택</h2>
+
+    <button onclick="plusStarBallon(1);">1개</button>
+    <button onclick="plusStarBallon(10);">10개</button>
+    <button onclick="plusStarBallon(100);">100개</button>
+    <button onclick="erase()">지우기</button>
+    <hr>
+    충전할 별풍선 개수 : <input type="text" value="0"> 개
+
+    <script>
+        //버튼 눌렀을 때, 동작하는 함수
+
+        //함수 내용 작성
+        var inputTag = document.querySelector("input");
+        function plusStarBallon(num){
+            //결과창 가져와서, value 를 1 증가
+            var current = inputTag.value;
+            inputTag.value = parseInt(current) + num;
+        }
+
+        function erase(){
+            inputTag.value = 0;
+        }
+    </script>
+    
+</body>
+</html>

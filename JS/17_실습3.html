@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>실습3</h1>
+
+    <h2>상품 갯수 입력</h2>
+
+    개당가격 : <input type="text" name="one">
+    <br>
+    <input type="text" name="many"> 개
+    <hr>
+    <button onclick="calc()">계산</button>
+    <hr>
+    <input type="text" name="result"> 원
+
+    <script>
+        function calc(){
+            var one = parseInt(document.querySelector("input[name=one]").value);
+            var many = parseInt(document.querySelector("input[name=many]").value);
+            var result = one*many;
+            document.querySelector("input[name=result]").value = result;
+        }
+    </script>
+    
+</body>
+</html>

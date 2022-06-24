@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>실습4</h1>
+
+    <h2>충전할 별풍선 개수 선택</h2>
+
+    <button onclick="one()">1개</button>
+    <button onclick="ten()">10개</button>
+    <button onclick="oneH()">100개</button>
+    <button onclick="reset()">지우기</button>
+    <hr>
+    충전할 별풍선 개수 : <input type="text"> 개
+
+    <script>
+        var btn = document.querySelectorAll('button');
+        var ballon = 0;
+        function one(){
+            ballon += 1;
+            document.querySelector('input').value = ballon;
+        }
+        function ten(){
+            ballon += 10;
+            document.querySelector('input').value = ballon;
+        }
+        function oneH(){
+            ballon += 100;
+            document.querySelector('input').value = ballon;
+        }
+        function reset(){
+            ballon = 0;
+            document.querySelector('input').value = ballon;
+        }
+        document.querySelector('input').value = ballon;
+
+    </script>
+    
+</body>
+</html>

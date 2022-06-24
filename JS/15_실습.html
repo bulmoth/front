@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>실습</h1>
+
+
+    <input type="text" name="id" required placeholder="아이디">
+        <br>
+        <input type="password" name="pwd" required placeholder="비밀번호">
+        <br>
+        <button onclick="login();">로그인</button>
+
+    <script>
+        //로그인 눌렀을 때, 아이디가 4글자 이상이 아니라면, 알람 띄우기
+        //로그인 눌렀을 때, 비밀번호가 4글자 이상이 아니라면, 알람 띄우기
+        function login(){
+            var id = document.querySelector('input[name=id]').value;
+            var pwd = document.querySelector('input[name=pwd]').value;
+
+            if(id.length < 4 || pwd.length < 4){
+                alert("아이디, 비번은 4글자 이상이어야 합니다.");
+            }
+        }
+        // function pwdW(){
+        //     var inputPwd = document.querySelector('input[name=pwd]');
+        //     if((inputPwd.value).length < 4){
+        //         alert("비번 4자리 이상")
+        //     }
+        // }
+
+        // var inputId = document.querySelector('input[name=id]');
+        // console.log(inputId);
+        // console.log(inputId.type);
+        // console.log(inputId.name);
+        // console.log(inputId.value);
+        // console.log(inputId.required);
+    </script>
+    
+</body>
+</html>

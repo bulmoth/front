@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        #result>input{
+            width: 100%;
+            height: 100%;
+            background-color: lightgray;
+        }
+        #result{
+            height: 100px;
+            width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        #keypad>div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        #keypad{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        input{
+            border: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="result">
+            <input type="text">
+        </div>
+        <div id="keypad">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>&lt;</div>
+            <div>0</div>
+            <div>ok</div>
+        </div>
+    </div>
+
+    <script>
+        var btnArr = document.querySelectorAll("#keypad>div");
+
+        for(var i=0;i<btnArr.length;i++){
+            var btn = btnArr[i];
+            btn.addEventListener('click', function(a){
+                var value = a.target.textContent
+                if(value == 'ok'){
+
+                }else if(value == "<"){
+                    //한글자 지우기
+                    var str = document.querySelector("#result>input").value;
+                    document.querySelector("#result>input").value = str.substring(0, str.length-1);
+                    //등호 왼쪽과 오른쪽의 역할이 달라서....d.qS().v가 각각 다른역할..,.,
+                    //JS의 모든것이 객체라서 일어난 일...
+                    //str에 ~~value의 "주소값"을 저장해둠,,,근데? 만약에 뒷줄에서
+                    //str = str.substring~~을 하게되버리면
+                    //str이라는 참조변수 안에 str.substring~~의 주소값이 들어가게 되버려서
+                    //~~value의 주소값을 가리키지 않게됨....그래서 ~~vlaue에 넣어주려면
+                    //직접 ~~value를 쓰고 str을 조물조물한 것의 주소값을
+                    //그 ~~value에 집어넣으면 넣고싶은 조물조물한 값이
+                    //~~value에 나타나게 된다......
+                }else{
+                    document.querySelector("#result>input").value += value;
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

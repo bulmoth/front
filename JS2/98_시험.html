@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 800px;
+            height: 300px;
+        }
+        #title{
+            width: 250px;
+        }
+        #content{
+            width: 250px;
+        }
+        #btntbl{
+            padding-left: 40%;
+            padding-top: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset id="wrap">
+        <legend>공지사항 작성하기</legend>
+        <table>
+            <tr>
+                <th>제목</th>
+                <td><input id="title" type="text" name="title" placeholder="제목을 입력하시오." required></td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td><textarea id="content" name="content" cols="20" rows="10" placeholder="내용을 입력하시오" required></textarea></td>
+            </tr>
+            <tr>
+                <th>첨부파일</th>
+                <td><input type="file" name="uploadFile"></td>
+            </tr>
+            <tr>
+                <td id="btntbl" colspan="2"><button>작성하기</button></td>
+            </tr>
+        </table>
+    </fieldset>
+    
+</body>
+</html>

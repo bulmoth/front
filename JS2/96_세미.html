@@ -76,7 +76,7 @@
             padding: 10px 30px;
         }
         .dropdown-menu{
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: white;
         }
         #etc{
             /* border: 1px solid green; */
@@ -177,11 +177,15 @@
 
 
     <script>
-        $(".nav-link").mousedown(function(){
+        $(".nav-link").mouseleave(function(){
             $(this).css("color","black");
+        }).mouseenter(function(){
+            $(this).css("color","darkgreen");
         });
-        $(".nav-link").mouseup(function(){
-            $(this).css("color","darkgreen")
+        $(".dropdown-item").mousedown(function(){
+            $(this).css("background-color","darkgreen");
+        }).mouseup(function(){
+            $(this).css("background-color","white");
         });
     </script>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
